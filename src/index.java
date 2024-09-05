@@ -1,7 +1,5 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
-
-
 public class index {
 
     public static void main(String[] args) {
