@@ -16,6 +16,6 @@ public class index {
         double num = scanner.nextDouble();
 
         System.out.print("Saida: " + teste + "\t" + df.format(num));
-
+        scanner.close();
     }
 }
