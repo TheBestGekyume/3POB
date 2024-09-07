@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-
 public class Exercicio4 {
     /*
     4. Elabore um programa para solicitar o nome, o sexo e o salário 
@@ -9,11 +8,12 @@ public class Exercicio4 {
     caso contrário, descontar 3%. Informar o valor do desconto e o salário líquido.
      */
     public static void main(String[] args){
+
         Scanner scanner = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("0.00");
 
-
         System.out.print("Digite o seu nome: ");
+
         String nome = scanner.nextLine();
 
         System.out.print("Digite o seu sexo: ");
@@ -30,6 +30,7 @@ public class Exercicio4 {
             System.out.print("ERROR");
         }
 
-        System.out.print("O seu salário líquido é " + df.format(salario));
+        System.out.print(nome + ", seu salário líquido é R$ " + df.format(salario));
+        scanner.close();
     }
 }

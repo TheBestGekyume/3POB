@@ -28,6 +28,7 @@ public class Exercicio3 {
             System.out.print("Reprovado!");
         }
 
-        
+        scanner.close();
+                
     }
 }

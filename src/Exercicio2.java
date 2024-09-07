@@ -21,5 +21,6 @@ public class Exercicio2 {
             System.out.print("Você tem aproximadamente " + idade + " anos. Você não pode votar!");
         }
 
+        scanner.close();
     }
 }

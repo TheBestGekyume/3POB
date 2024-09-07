@@ -1,4 +1,3 @@
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Exercicio1 {
@@ -20,6 +19,6 @@ public class Exercicio1 {
         }else{
             System.out.println("Ola " + nome + ", você é menor de idade");
         }
-      
+        scanner.close();
     }
 }
