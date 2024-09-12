@@ -1,5 +1,5 @@
+package ListaEx2;
 import java.util.Scanner;
-
 public class Exercicio1 {
 
     /*1.  Faça um programa para solicitar o nome e a 
