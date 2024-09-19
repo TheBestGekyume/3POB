@@ -1,29 +1,29 @@
-package ListaEx3;
-import java.util.Scanner;
+    package ListaEx3;
+    import java.util.Scanner;
 
-public class Exercicio3 {
+    public class Exercicio3 {
 
-    // 3.  Faça um programa que leia a idade de 10 pessoas. Ao final escreva a média das idades.
+        // 3.  Faça um programa que leia a idade de 10 pessoas. Ao final escreva a média das idades.
 
-    public static void main(String[] args) {
-        
-        Scanner scanner = new Scanner(System.in);
+        public static void main(String[] args) {
+            
+            Scanner scanner = new Scanner(System.in);
 
-        int[] idades = new int[10];
-        int somaIdades = 0;
+            int[] idades = new int[10];
+            int somaIdades = 0;
 
-        for (int i = 0; i < idades.length; i++) {
-            System.out.printf("Digite a idade " + (i + 1) + ": ");
-            idades[i] = scanner.nextInt();
+            for (int i = 0; i < idades.length; i++) {
+                System.out.printf("Digite a idade " + (i + 1) + ": ");
+                idades[i] = scanner.nextInt();
 
-            somaIdades += idades[i];
+                somaIdades += idades[i];
+            }
+
+            int mediaIdades = somaIdades / idades.length;
+
+            System.out.print("A media de todas as idades é " + mediaIdades);
+
+            scanner.close();
+
         }
-
-        int mediaIdades = somaIdades / idades.length;
-
-        System.out.print("A media de todas as idades é " + mediaIdades);
-
-        scanner.close();
-
     }
-}
