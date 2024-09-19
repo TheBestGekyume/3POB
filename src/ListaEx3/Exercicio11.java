@@ -4,13 +4,6 @@ import java.util.Scanner;
 import java.text.DecimalFormat;
 
 public class Exercicio11 {
-    // 11. Um determinado material radioativo perde metade de sua massa a cada 50
-    // segundos.
-    // Dada a massa inicial, em gramas, fazer um algoritmo que determine o tempo
-    // necessário
-    // para que essa massa se torne menor do que 0.5 gramas. Escreva a massa final,
-    // e o tempo.
-    // Observação: o usuário deve digitar a massa inicial.
 
     public static void main(String[] args) {
 
@@ -18,21 +11,27 @@ public class Exercicio11 {
         DecimalFormat df = new DecimalFormat("0.00");
 
         int tempo = 0;
+        double massaInicial;
 
-        System.out.print("Digite a massa inicial em gramas: ");
+        do {
+            System.out.print("Digite a massa inicial em gramas (maior que 0.5g): ");
+            massaInicial = scanner.nextDouble();
 
-        double massaAtual = scanner.nextDouble();
+            if (massaInicial <= 0.5) {
+                System.out.println("A massa inicial deve ser maior que 0.5 gramas.");
+            }
+        } while (massaInicial <= 0.5);
+
+        double massaAtual = massaInicial;
 
         while (massaAtual > 0.5) {
             tempo += 50;
             massaAtual /= 2;
         }
 
-        System.out.println("Tempo de decaimento = " + tempo + " segundos");
-        System.out.print("Massa Final = " + df.format(massaAtual) + " gramas");
+        System.out.println("\nTempo necessário para a massa se tornar menor que 0.5g é " + tempo + " segundos");
+        System.out.println("Massa final = " + df.format(massaAtual) + " gramas");
 
         scanner.close();
-
     }
-
 }
