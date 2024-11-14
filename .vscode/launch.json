@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Exercicio3L1",
+            "request": "launch",
+            "mainClass": "lista1.Exercicio3L1",
+            "projectName": "3POB_d052120b"
+        },
+        {
+            "type": "java",
+            "name": "Exercicio1L1",
+            "request": "launch",
+            "mainClass": "ListaEx1.Exercicio1L1",
+            "projectName": "3POB_d052120b"
+        },
+        {
+            "type": "java",
+            "name": "index",
+            "request": "launch",
+            "mainClass": "index",
+            "projectName": "3POB_d052120b"
+        },
+        {
+            "type": "java",
+            "name": "Exercicio1",
+            "request": "launch",
+            "mainClass": "ListaEx3.Exercicio1",
+            "projectName": "3POB_d052120b"
+        },
+        {
+            "type": "java",
             "name": "Exercicio4",
             "request": "launch",
             "mainClass": "ListaEx3.Exercicio4",
