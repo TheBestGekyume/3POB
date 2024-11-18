@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ControleFuncionario",
+            "request": "launch",
+            "mainClass": "lista5.Exercicio3L5.ControleFuncionario",
+            "projectName": "3POB_d052120b"
+        },
+        {
+            "type": "java",
+            "name": "ControleEmpregado",
+            "request": "launch",
+            "mainClass": "lista5.Exercicio2L5.ControleEmpregado",
+            "projectName": "3POB_d052120b"
+        },
+        {
+            "type": "java",
+            "name": "ControleVenda",
+            "request": "launch",
+            "mainClass": "lista5.Exercicio1L5.ControleVenda",
+            "projectName": "3POB_d052120b"
+        },
+        {
+            "type": "java",
             "name": "Exercicio5L3",
             "request": "launch",
             "mainClass": "lista3.Exercicio5L3",
