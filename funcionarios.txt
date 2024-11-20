@@ -1,0 +1,5 @@
+37;Treinador;Yuri Alberto;7200.3
+109;GerenteDesenvolvedor;Pedro Lucas;10244.66
+100;Desenvolvedor;Maria Lessa;5299.2
+6;Gerente;Jorge Costa;27502.82
+999;Desenvolvedor;Marcelo Matos;3478.91
