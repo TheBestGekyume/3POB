@@ -8,6 +8,20 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "AV2.exercicioArquivo.Main",
+            "projectName": "3POB_d052120b"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "AV2.exercicioArrayList.Main",
+            "projectName": "3POB_d052120b"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "exercicioHeranca.projetoEmpresa.Main",
             "projectName": "3POB_d052120b"
         },
