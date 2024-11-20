@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "exercicioHeranca.projetoEmpresa.Main",
+            "projectName": "3POB_d052120b"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "exercicioHeranca.projetoFabrica.Main",
+            "projectName": "3POB_d052120b"
+        },
+        {
+            "type": "java",
             "name": "ControleFuncionario",
             "request": "launch",
             "mainClass": "lista5.Exercicio3L5.ControleFuncionario",
