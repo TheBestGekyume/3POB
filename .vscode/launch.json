@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "AV2.projeto.Main",
+            "projectName": "3POB_d052120b"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "AV2.exercicioArquivo.Main",
             "projectName": "3POB_d052120b"
         },
