@@ -9,7 +9,7 @@ public class Gerente extends Funcionario implements Gerencia {
 
     @Override
     public void mostrarDetalhes() {
-        System.out.println("Gerente [ID=" + getId() + ", Nome=" + getNome() + ", Salário=" + getSalario() + "]");
+        System.out.println("Gerente [ ID = " + getId() + ", Nome = " + getNome() + ", Salário = " + getSalario() + " ]");
     }
 
     @Override

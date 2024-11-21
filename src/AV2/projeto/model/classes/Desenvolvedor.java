@@ -9,7 +9,7 @@ public class Desenvolvedor extends Funcionario implements Desenvolve {
 
     @Override
     public void mostrarDetalhes() {
-        System.out.println("Desenvolvedor [ID=" + getId() + ", Nome=" + getNome() + ", Salário=" + getSalario() + "]");
+        System.out.println("Desenvolvedor [ ID = " + getId() + ", Nome = " + getNome() + ", Salário = " + getSalario() + " ]");
     }
 
     @Override
