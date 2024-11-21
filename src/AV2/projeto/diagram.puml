@@ -1,0 +1,68 @@
+@startuml
+
+' Classe Funcionario
+abstract class Funcionario {
+  - id: int
+  - nome: String
+  - salario: double
+  + getId(): int
+  + getNome(): String
+  + setNome(nome: String): void
+  + getSalario(): double
+  + setSalario(salario: double): void
+  + receberAumento(aumento: double): void
+  + mostrarDetalhes(): void
+}
+
+' Interfaces
+interface Desenvolve {
+  + codar(): void
+  + resolverProblemas(): void
+}
+
+interface Gerencia {
+  + organizarEquipe(): void
+  + conduzirReunioes(): void
+}
+
+interface Treina {
+  + ensinarTecnologia(): void
+  + motivarEquipe(): void
+}
+
+' Classes Específicas
+class Desenvolvedor {
+  + codar(): void
+  + resolverProblemas(): void
+}
+
+class Gerente {
+  + organizarEquipe(): void
+  + conduzirReunioes(): void
+}
+
+class Treinador {
+  + ensinarTecnologia(): void
+  + motivarEquipe(): void
+}
+
+class GerenteDesenvolvedor {
+  + codar(): void
+  + resolverProblemas(): void
+  + organizarEquipe(): void
+  + conduzirReunioes(): void
+}
+
+' Relações entre classes
+Funcionario <|-- Desenvolvedor
+Funcionario <|-- Gerente
+Funcionario <|-- Treinador
+Funcionario <|-- GerenteDesenvolvedor
+
+Desenvolve <|-- Desenvolvedor
+Gerencia <|-- Gerente
+Treina <|-- Treinador
+Gerencia <|-- GerenteDesenvolvedor
+Desenvolve <|-- GerenteDesenvolvedor
+
+@enduml

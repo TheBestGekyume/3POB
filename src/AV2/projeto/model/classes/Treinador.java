@@ -9,7 +9,7 @@ public class Treinador extends Funcionario implements Treina {
 
     @Override
     public void mostrarDetalhes() {
-        System.out.println("Treinador [ID=" + getId() + ", Nome=" + getNome() + ", Salário=" + getSalario() + "]");
+        System.out.println("Treinador [ ID = " + getId() + ", Nome = " + getNome() + ", Salário = " + getSalario() + " ]");
     }
 
     @Override

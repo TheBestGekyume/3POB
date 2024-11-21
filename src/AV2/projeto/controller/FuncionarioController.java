@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class FuncionarioController {
     private ArrayList<Funcionario> funcionarios = new ArrayList<>();
-    private final String arquivo = "funcionarios.txt";
+    private final String arquivo = "./funcionarios.txt";
 
     public void adicionarFuncionario(Funcionario funcionario) {
         funcionarios.add(funcionario);
@@ -19,7 +19,7 @@ public class FuncionarioController {
 
     public void listarFuncionarios() {
         if (funcionarios.isEmpty()) {
-            System.out.println("\n⚠️ Nenhum funcionário cadastrado.");
+            System.out.println("\nNenhum funcionário cadastrado.");
         } else {
             funcionarios.forEach(Funcionario::mostrarDetalhes);
         }
@@ -31,20 +31,20 @@ public class FuncionarioController {
                 f.setNome(novoNome);
                 f.setSalario(novoSalario);
                 salvarDados();
-                System.out.println("\n✅ Funcionário atualizado com sucesso!");
+                System.out.println("\nFuncionário atualizado com sucesso!");
                 return;
             }
         }
-        System.out.println("\n⚠️ Funcionário com ID " + id + " não encontrado.");
+        System.out.println("\nFuncionário com ID " + id + " não encontrado.");
     }
 
     public void removerFuncionario(int id) {
         boolean removido = funcionarios.removeIf(f -> f.getId() == id);
         if (removido) {
             salvarDados();
-            System.out.println("\n✅ Funcionário removido com sucesso!");
+            System.out.println("\nFuncionário removido com sucesso!");
         } else {
-            System.out.println("\n⚠️ Funcionário com ID " + id + " não encontrado.");
+            System.out.println("\nFuncionário com ID " + id + " não encontrado.");
         }
     }
 
@@ -74,7 +74,7 @@ public class FuncionarioController {
                 }
             }
         } catch (IOException e) {
-            System.err.println("⚠️ Erro ao carregar dados: " + e.getMessage());
+            System.err.println(" Erro ao carregar dados: " + e.getMessage());
         }
     }
 
@@ -85,8 +85,19 @@ public class FuncionarioController {
                 pw.println(f.getId() + ";" + tipo + ";" + f.getNome() + ";" + f.getSalario());
             }
         } catch (IOException e) {
-            System.err.println("⚠️ Erro ao salvar dados: " + e.getMessage());
+            System.err.println(" Erro ao salvar dados: " + e.getMessage());
         }
+    }
+
+    public boolean funcionariosVazios() {
+        return funcionarios.isEmpty();
+    }
+
+    public Funcionario getFuncionarioPorId(int id) {
+        return funcionarios.stream()
+                .filter(f -> f.getId() == id)
+                .findFirst()
+                .orElse(null);
     }
 }
 
